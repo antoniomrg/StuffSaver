@@ -1,0 +1,58 @@
+{% extends "new_layout.html" %}
+
+{% block title %}
+    Add Content
+{% endblock %}
+
+{% block main %}
+
+<link href="/css/style_login.css" rel="stylesheet">
+
+<div class="wrapperCustom fadeInDown">
+  <div id="formContentCustom">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first" id="add_content">
+      <h3>Let's add some content</h3>
+    </div>
+
+    <!-- Login Form -->
+    <form <form action="/add/existing" method="post">
+
+      <div class="row justify-content-center mb-3" id="lb2">
+         <label for="content">Category: {{ category }}</label>
+      </div>
+      <div>
+          <textarea class="form-control-lg" name="category" hidden>{{ category }}</textarea>
+      </div>
+      <div class="row justify-content-center" id="lb2">
+         <label for="content">Title</label>
+      </div>
+      <div class="row justify-content-center">
+        <textarea class="form-control-lg" id="ta2" name="field_1"></textarea>
+      </div>
+      <div class="row justify-content-center" id="lb3">
+         <label for="content">Description</label>
+      </div>
+      <div class="row justify-content-center">
+        <textarea class="form-control-lg" id="ta3" name="field_2"></textarea>
+      </div>
+      <div class="row justify-content-center" id="lb4">
+         <label for="content">URL/Link</label>
+      </div>
+      <div class="row justify-content-center">
+        <textarea class="form-control-lg" id="ta4" name="field_3"></textarea>
+      </div>
+      <input type="submit" class="fadeIn fourth mt-4" value="Add to Stuff Saver">
+    </form>
+
+
+
+  </div>
+</div>
+
+
+{% endblock %}
+
+

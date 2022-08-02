@@ -1,0 +1,99 @@
+{% extends "new_layout.html" %}
+
+{% block title %}
+    Add Custom...
+{% endblock %}
+
+{% block main %}
+
+      <!--<div class="container">-->
+      <!--  <div class="row justify-content-center"><h2 class="mt-3 mb-3">What are you adding?</h2></div>-->
+      <!--    <div class="row justify-content-end">-->
+      <!--      <a class="btn btn-primary" href="/add" role="button">Back</a>-->
+      <!--    </div>-->
+      <!--    <div class="row">-->
+      <!--      <div class="col-12 justify-content-center">-->
+      <!--        <form action="/add/custom" method="POST" id="form_custom">-->
+      <!--          <div class="form-group mt-3 h5 ">-->
+      <!--            <div class="row justify-content-center">-->
+      <!--              <label for="content">Choose a category</label>-->
+      <!--            </div>-->
+      <!--            <div class="row row justify-content-center mb-3">-->
+      <!--              <textarea class="form-control-lg" rows="1" id="content" name="custom_category"></textarea>-->
+      <!--            </div>-->
+      <!--            <div class="row justify-content-center">-->
+      <!--              <label for="content">Field 1</label>-->
+      <!--            </div>-->
+      <!--            <div class="row row justify-content-center">-->
+      <!--              <textarea class="form-control-lg" rows="1" id="content" name="field_1"></textarea>-->
+      <!--            </div>-->
+      <!--            <div class="row justify-content-center mt-3">-->
+      <!--              <label for="content">Field 2</label>-->
+      <!--            </div>-->
+      <!--            <div class="row justify-content-center">-->
+      <!--              <textarea class="form-control mb-3" rows="3" cols="70" id="content" name="field_2"></textarea>-->
+      <!--            </div>-->
+      <!--            <div class="row justify-content-center">-->
+      <!--              <label for="content">Field 3</label>-->
+      <!--            </div>-->
+      <!--            <div class="row row justify-content-center">-->
+      <!--              <textarea class="form-control-lg mb-3" rows="1" cols="40" id="content" name="field_3"></textarea>-->
+      <!--            </div>-->
+
+      <!--              <button class="btn btn-primary mt-2" type="submit">Add to Rememberit</button>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--      </form>-->
+      <!--      </div>-->
+      <!--    </div>-->
+      <!--  </div>-->
+      <!--</div>-->
+  <link href="/css/style_login.css" rel="stylesheet">
+
+<div class="wrapperCustom fadeInDown">
+  <div id="formContentCustom">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first" id="add_content">
+      <h3>Let's add some content</h3>
+    </div>
+
+    <!-- Login Form -->
+    <form <form action="/add/custom" method="post">
+      <div class="row justify-content-center" id="lb1">
+         <label for="content">Category</label>
+      </div>
+      <div class="row justify-content-center">
+        <textarea class="form-control-lg" id="ta1" name="category"></textarea>
+      </div>
+      <div class="row justify-content-center" id="lb2">
+         <label for="content">Title</label>
+      </div>
+      <div class="row justify-content-center">
+        <textarea class="form-control-lg" id="ta2" name="field_1"></textarea>
+      </div>
+      <div class="row justify-content-center" id="lb3">
+         <label for="content">Description</label>
+      </div>
+      <div class="row justify-content-center">
+        <textarea class="form-control-lg" id="ta3" name="field_2"></textarea>
+      </div>
+      <div class="row justify-content-center" id="lb4">
+         <label for="content">URL/Link</label>
+      </div>
+      <div class="row justify-content-center">
+        <textarea class="form-control-lg" id="ta4" name="field_3"></textarea>
+      </div>
+      <input type="submit" class="fadeIn fourth mt-4" value="Add to Stuff Saver">
+    </form>
+
+
+
+  </div>
+</div>
+
+
+{% endblock %}
+
+

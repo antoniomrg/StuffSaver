@@ -1,0 +1,30 @@
+{% extends "new_layout.html" %}
+
+{% block title %}
+    Add new
+{% endblock %}
+
+{% block main %}
+
+
+    <div class="container">
+      <div class="row justify-content-center"><h3 class="mt-3 mb-3">Define the type of content to add</h3></div>
+        <div class="row justify-content-center">
+          <div class="dropdown mt-5">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Choose a category</button>
+
+          <div class="dropdown-menu">
+            {% for row in rows %}
+              <a class="dropdown-item" href="/add/existing/{{ row['category'] }}" id="existing" name="category">{{ row["category"] }}</a>
+
+
+            {% endfor %}
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/add/custom" id="new">New Content</a>
+          </div>
+        </div>
+
+
+{% endblock %}
+
+
